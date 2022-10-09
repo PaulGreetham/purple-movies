@@ -13,3 +13,109 @@
  *= require_tree .
  *= require_self
  */
+
+
+body {
+  font-family: poppins;
+  background-color: rgb(108, 39, 119);
+}
+
+h1 {
+  font-size: 5rem;
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+header {
+  background-color: rgb(108, 39, 119);
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.search {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 50px;
+  color: white;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  height: 2rem;
+  width: 34rem;
+}
+
+.search::placeholder {
+  color: white;
+}
+
+.search::focus {
+  background-color: white;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie {
+  background-color: rgb(108, 39, 119);
+  border-radius: 10px;
+  box-shadow: 2px 2px white;
+  overflow: hidden;
+  position: relative;
+  margin: 1rem;
+  width: 18rem;
+}
+.movie img {
+  width: 100%;
+}
+
+.movie-info {
+  color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem 1rem;
+  letter-spacing: 0.5px;
+}
+.movie-info span {
+  background-color: white;
+  border-radius: 3px;
+  font-weight: bold;
+  padding: 0.25rem 0.5rem;
+}
+
+.movie-info span.green {
+  color: rgb(108, 39, 119);
+}
+
+.movie-info span.orange {
+  color: rgb(108, 39, 119);
+}
+
+movie-info span.red {
+  color: rgb(108, 39, 119);
+}
+
+.overview {
+  background-color: rgb(108, 39, 119);
+  color: white;
+  padding: 2rem;
+  position: absolute;
+  max-height: 100%;
+  overflow: auto;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  transform: translateY(101%);
+  transition: transform 0.7s ease-in;
+}
+.overview h3 {
+  margin-top: 0;
+}
+
+.movie:hover .overview {
+  transform: translateY(0);
+}
