@@ -61,7 +61,7 @@ main {
 .movie {
   background-color: rgb(108, 39, 119);
   border-radius: 10px;
-  box-shadow: 1.5px 1.5px white;
+  box-shadow: 2px 2px white;
   overflow: hidden;
   position: relative;
   margin: 1rem;
@@ -99,7 +99,8 @@ movie-info span.red {
 }
 
 .overview {
-  background-color: #fff;
+  background-color: rgb(108, 39, 119);
+  color: white;
   padding: 2rem;
   position: absolute;
   max-height: 100%;
@@ -107,8 +108,9 @@ movie-info span.red {
   left: 0;
   bottom: 0;
   right: 0;
+  top: 0;
   transform: translateY(101%);
-  transition: transform 0.3s ease-in;
+  transition: transform 0.7s ease-in;
 }
 .overview h3 {
   margin-top: 0;
