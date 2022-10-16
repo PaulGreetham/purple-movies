@@ -54,18 +54,31 @@ header {
 }
 
 main {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 0.5em;
+  justify-content: space-between;
   flex-wrap: wrap;
+  transition: 0.3s linear;
+  margin: 8vh;
+  overflow: hidden;
 }
 
 .movie {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   background-color: rgb(108, 39, 119);
   border-radius: 10px;
   box-shadow: 2px 2px white;
   overflow: hidden;
   position: relative;
-  margin: 1rem;
-  width: 18rem;
+  width: 24em;
+  height: 24em;
+  margin: 1em;
+  grid-gap: 0.75em;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  transition: 0.3s linear;
 }
 .movie img {
   width: 100%;
